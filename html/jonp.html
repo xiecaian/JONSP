@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>jsonp</title>
+        <link rel="stylesheet" href="../css/jonp.css"/>
+    </head>
+    <body>
+        <div class="search-wrap" data-config='{
+            "input": "J_searchInput",
+            "wdList": "J_wdList",
+            "ListTpl":"J_listTpl"
+
+        }'>
+            <div class="input-wrap">
+                <input type="text" class="search-input J_searchInput" />
+            </div>
+            <div class="list-wrap">
+                <ul class="wd-list J_wdList">
+                       
+                </ul>
+            </div>
+        </div>
+		<iframe src = 'https://www.baidu.com' name = '_Iframe'>
+		</iframe>
+        <script type="text/html" id="J_listTpl">
+            <li class="wd-item">
+              <a href="https://www.baidu.com/s?wd={{wdLink}}" target="_Iframe" class="wd-lk">{{wd}}</a>
+            </li> 
+        </script>
+        <script type = 'text/javascript' src = '../js/utils.js'></script>
+        <script type = 'text/javascript' src = '../js/search.js'></script>
+        
+    </body>
+</html>
